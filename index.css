@@ -1,0 +1,183 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+/* Logo CSS */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #f0c800;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 30px;
+    margin: 0;
+    font-family: cursive;
+}
+
+.logo p {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Nav CSS */
+
+/* Add this to your existing styles.css */
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+main {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+.profile .about {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+/* Domain Buttons */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn-yellow {
+    background-color: #f0c800;
+    color: #000000;
+}
+
+.btn-yellow:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-red {
+    background-color: #f14c4c;
+    color: #ffffff;
+}
+
+.btn-red:hover {
+    background-color: #ffffff;
+    color: #f14c4c;
+}
+
+.btn-blue {
+    background-color: #4cb1f1;
+    color: #ffffff;
+}
+
+.btn-blue:hover {
+    background-color: #ffffff;
+    color: #4cb1f1;
+}
+
+
+/* SKills */
+
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.devops-yellow {
+    background-color: #f0c800;
+    color: #000000;
+}
+
+.devops-yellow:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.data-red {
+    background-color: #f14c4c;
+    color: #ffffff;
+}
+
+.data-red:hover {
+    background-color: #ffffff;
+    color: #f14c4c;
+}
+
+.full-blue {
+    background-color: #4cb1f1;
+    color: #ffffff;
+}
+
+.full-blue:hover {
+    background-color: #ffffff;
+    color: #4cb1f1;
+}
