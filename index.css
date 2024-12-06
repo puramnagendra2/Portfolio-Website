@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
 }
 
@@ -134,8 +134,7 @@ main {
 }
 
 
-/* SKills */
-
+/* SKills 
 .skills-buttons {
     display: flex;
     justify-content: center;
@@ -180,4 +179,58 @@ main {
 .full-blue:hover {
     background-color: #ffffff;
     color: #4cb1f1;
+}
+
+
+*/
+/* SKills Section */
+
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.skill {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.skill:hover .tooltip {
+    opacity: 1;
 }
