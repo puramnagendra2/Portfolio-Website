@@ -1,17 +1,34 @@
 /* styles.css */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
     color: #333;
+    align-items: center;
 }
 
-.container {
+h1{
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+/* Navbar Section */
+
+.navbar {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px 0 ;
+    /* border: 2px solid red; */
+    border-radius: 10px;
 }
+
 
 header {
     display: flex;
@@ -28,6 +45,14 @@ header {
     align-items: center;
 }
 
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    color: #000000;
+}
+
 .logo .dot {
     width: 12px;
     height: 12px;
@@ -36,21 +61,7 @@ header {
     margin-right: 10px;
 }
 
-.logo h1 {
-    font-size: 30px;
-    margin: 0;
-    font-family: cursive;
-}
-
-.logo p {
-    margin: 0 0 0 10px;
-    font-size: 14px;
-    color: #666;
-}
-
-/* Nav CSS */
-
-/* Add this to your existing styles.css */
+/* Nav Links */
 
 nav a {
     margin-left: 20px;
@@ -59,31 +70,57 @@ nav a {
     font-weight: bold;
     font-size: 20px;
     font-family: cursive;
+    transition: transform 0.3s ease-in-out;
+}
+nav a:hover{
+    color: #1e70eb;
+    transform: scale(1.2);
+
 }
 
-main {
+/* About Setion */
+
+.about {
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+    /* border: 2px solid blue; */
+    padding: 20px 0;
 }
 
-.profile img {
-    width: 200px;
-    height: 200px;
+.about img {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    align-items: center;
     object-fit: cover;
     margin-bottom: 20px;
+    padding: 10px;
+    /*transition: transform 0.1s ease-in-out;*/
 }
 
-.profile h1 {
+/*
+.about:hover img{
+    transform: scale(1.2);
+}
+*/
+
+.about h4{
+    font-size: 20px;
+    margin: 0; 
+}
+
+.about h1 {
     font-size: 36px;
-    margin-bottom: 10px;
-    font-family: cursive;
+    margin: 0;
 }
 
-.profile .about {
+.about .summary {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
-    font-family: cursive;
 }
 
 /* Domain Buttons */
@@ -91,26 +128,32 @@ main {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    font-size: 16px;
 }
 
-.btn {
+.buttons .btn {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     font-family: cursive;
     padding: 10px 20px;
     border-radius: 20px;
+    border: 2px solid transparent;
+    /* Smooth Transition of Button Hover */
+    transition: transform 0.3s ease, border-color 0.3s, background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-yellow {
-    background-color: #f0c800;
+    background-color: orange;
     color: #000000;
 }
 
 .btn-yellow:hover {
     background-color: #ffffff;
     color: #000000;
+    transform: scale(1);
+    border-color: orange;
 }
 
 .btn-red {
@@ -120,7 +163,9 @@ main {
 
 .btn-red:hover {
     background-color: #ffffff;
-    color: #f14c4c;
+    color: #000000;
+    transform: scale(1);
+    border-color: #f14c4c;
 }
 
 .btn-blue {
@@ -130,67 +175,40 @@ main {
 
 .btn-blue:hover {
     background-color: #ffffff;
-    color: #4cb1f1;
-}
-
-
-/* SKills 
-.skills-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 20px;
-}
-
-.btn {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-family: cursive;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-.devops-yellow {
-    background-color: #f0c800;
     color: #000000;
+    transform: scale(1);
+    border-color: #4cb1f1;
 }
 
-.devops-yellow:hover {
-    background-color: #ffffff;
-    color: #000000;
+/* End of About Section */
+
+hr {
+    border: 0;
+    height: 5px;
+    border-top: 3px dashed #1e70eb;
+    width: 80%; /* Line width */
+    margin: 10px auto; /* Center align */
 }
 
-.data-red {
-    background-color: #f14c4c;
-    color: #ffffff;
-}
-
-.data-red:hover {
-    background-color: #ffffff;
-    color: #f14c4c;
-}
-
-.full-blue {
-    background-color: #4cb1f1;
-    color: #ffffff;
-}
-
-.full-blue:hover {
-    background-color: #ffffff;
-    color: #4cb1f1;
-}
-
-
-*/
 /* SKills Section */
+
+.skills{
+    text-align: center;
+    justify-content: center;
+    font-family: cursive;
+    /* border: 2px solid green; */
+}
+.skills h1{
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
 
 .skills-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 20px;
+    gap: 30px;
+    padding: 10px 0;
 }
 
 .skill {
@@ -199,7 +217,7 @@ main {
     height: 80px;
     border-radius: 50%;
     background-color: #ffffff;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,6 +232,7 @@ main {
 .skill img {
     width: 80px;
     height: 80px;
+    border-radius: 50px;
     margin-bottom: 0;
     object-fit: cover;
 }
@@ -233,4 +252,54 @@ main {
 
 .skill:hover .tooltip {
     opacity: 1;
+}
+
+/* End of Skills Section */
+
+/* Projects Section */
+
+.projects{
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    /* border: 2px solid violet; */
+}
+
+.projects h1{
+    margin: 10px 0;
+}
+
+.carousel{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    height: 50vh;
+}
+
+.division{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    margin: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+
+.division:nth-child(1){
+    background: #fff;
+    border: 2px solid #f0c800;
+}
+
+.division:nth-child(2){
+    background: #fff;
+    border: 2px solid #f14c4c;
+}
+
+.division:nth-child(3){
+    background: #fff;
+    border: 2px solid #4cb1f1;
 }
